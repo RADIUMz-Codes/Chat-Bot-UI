@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ChatBot from "./components/ChatBot";
+import { FaRobot } from "react-icons/fa";
+import { useState } from "react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    return (
+        <>
+            <button
+                className="icon"
+                onClick={() => setIsModalOpen(!isModalOpen)}
+            >
+                <FaRobot className="robo-icon" />
+            </button>
+            
+            {isModalOpen && <ChatBot setIsModalOpen={setIsModalOpen} />}
+        </>
+    );
 }
 
 export default App;

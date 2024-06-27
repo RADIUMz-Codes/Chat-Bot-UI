@@ -1,0 +1,29 @@
+.bot{
+    display: flex;
+}
+.bot-message{
+    width: 70%;
+    padding: 8px;
+    margin: 5px;
+    background-color: rgb(42, 42, 42);
+    color: white;
+    /* border: 2px solid black; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.bot .bot-icon{
+    height: 20px;
+    width: 20px;
+
+    color:white;
+    padding: 4px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: gray;
+    margin-top: 10px;
+    margin-left: 3px;
+    
+
+}

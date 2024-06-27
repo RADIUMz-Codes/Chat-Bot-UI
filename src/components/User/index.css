@@ -1,0 +1,25 @@
+.user{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+.user-message{
+    width: 70%;
+    padding: 6px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.user .user-icon{
+    height: 20px;
+    width: 20px;
+    align-self: flex-end;
+    color:white;
+    padding: 4px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: gray;
+    margin-right: 3px;
+    margin-top: 10px;
+    align-self: start;
+}
