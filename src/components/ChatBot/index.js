@@ -6,6 +6,7 @@ import { IoSend } from "react-icons/io5";
 import axios from "axios";
 import Bot from "../Bot";
 import User from "../User";
+import KpmgLogo from "../../assets/kpmg.png"
 
 function ChatBot({ setIsModalOpen }) {
     const [data, setData] = useState("");
@@ -62,7 +63,7 @@ function ChatBot({ setIsModalOpen }) {
                 {/** ***************** Haeder ********************* */}
                 <div className="bot-info">
                     {/* <FaRegUserCircle className="icn-profile" />*/}
-                    <div className="user-name">KPMG</div>
+                    <img className="user-name" src={KpmgLogo}/>
                     <button
                         className="btn-close"
                         onClick={() => setIsModalOpen(false)}

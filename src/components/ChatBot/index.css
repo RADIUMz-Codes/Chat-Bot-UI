@@ -1,13 +1,14 @@
 .bot-layout {
     /* style */
-    height: 400px;
+    height: 450px;
     width: 300px;
     border: 0px solid black;
-    border-radius: 3%;
+    border-radius: 2%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     flex-direction: column;
-
+    align-items: center;
+    
     /* position */
     position: absolute;
 
@@ -43,9 +44,12 @@
     display: flex;
     align-items: center;
     position: relative;
+    overflow: hidden;
+    object-fit: contain;
+    object-position: center;
 }
 .user-name {
-    padding-left: 10px;
+    height: 50px;
 }
 .btn-close {
     color: white;
@@ -71,8 +75,7 @@
 .chat-area {
     overflow-y: scroll;
     /* padding: 10px; */
-    /* margin: 10px; */
-    width: 100%;
+    width: 95%;
     height: 75%;
     display: flex;
     flex-direction: column;
@@ -94,9 +97,9 @@
 .chat-input {
     height: 32px;
     border: 2px solid #8674FE;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    width: 80%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 78%;
     font-size: 1rem;
     padding: 2px;
     border: none;
@@ -115,8 +118,8 @@
     height: 40px;
     width: 50px;
     border: 2px solid #8674FE;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .btn-send:disabled{
     border: 2px solid #8674FE;
