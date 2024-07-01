@@ -50,7 +50,7 @@ function ChatBot({ setIsModalOpen }) {
             description: inputValue,
         };
         const response = await axios.post('http://localhost:8000/api/incident/',data)
-
+        setInputDisabled(true);
         setIncId(response.data.id)
 
         
@@ -61,8 +61,8 @@ function ChatBot({ setIsModalOpen }) {
             <div className="bot-layout">
                 {/** ***************** Haeder ********************* */}
                 <div className="bot-info">
-                    <FaRegUserCircle className="icn-profile" />
-                    <div className="user-name">Kumar, Abhishek</div>
+                    {/* <FaRegUserCircle className="icn-profile" />*/}
+                    <div className="user-name">KPMG</div>
                     <button
                         className="btn-close"
                         onClick={() => setIsModalOpen(false)}
